@@ -1,0 +1,5 @@
+select C1.name
+from Customer C1
+inner join Customer C2
+on C1.id = C2.id
+where C2.referee_id <> 2 or C2.referee_id is null
