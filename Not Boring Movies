@@ -1,4 +1,4 @@
 select *
 from Cinema
 where Cinema.id %2 = 1 and Cinema.description <> 'boring'
-order by Cinema.rating desc
+order by Cinema.rating desc  
