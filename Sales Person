@@ -1,0 +1,8 @@
+SELECT name
+FROM SalesPerson
+WHERE sales_id NOT IN (
+    SELECT Orders.sales_id
+    FROM Company
+    left JOIN Orders ON Company.com_id = Orders.com_id
+    WHERE Company.name = 'RED' and Orders.sales_id is not null
+);
