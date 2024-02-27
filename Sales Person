@@ -1,3 +1,5 @@
+Done in 1145 ms
+Beats 78.61% of users with MS SQL Server
 SELECT name
 FROM SalesPerson
 WHERE sales_id NOT IN (
